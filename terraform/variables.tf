@@ -4,13 +4,13 @@ terraform {
 
 variable "region" {
   type        = string
-  default     = "us-east4"
+  default     = "europe-west1"
   description = "Region in which to create the cluster and run Atlantis."
 }
 
 variable "project" {
   type        = string
-  default     = ""
+  default     = "pentoapp"
   description = "Project ID where Terraform is authenticated to run to create additional projects. If provided, Terraform will create the GKE and Vault cluster inside this project. If not given, Terraform will generate a new project."
 }
 
